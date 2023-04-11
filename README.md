@@ -2,7 +2,8 @@
 # case-of-a-noun-with-a-numeral
 Return right word form for a digit.
 
-``// Test case 1
+``
+// Test case 1
 const result1 = caseForDigits(1, 'яблоко', 'яблока', 'яблок');
 console.log(result1 === 'яблоко'); // expected output: true
 
