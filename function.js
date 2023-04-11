@@ -13,11 +13,8 @@ window.function = function (digit, wordFor1, wordFor2_4, wordFor5_14) {
   wordFor2_4 = wordFor2_4.value ?? null;
   wordFor5_14 = wordFor5_14.value ?? null;
   
-  if (digit && wordFor1 && wordFor2_4 && wordFor5_14) {
-    const d = digit.toString().slice(-2);
-    return d[0] === '1' || d[1] >= '5' || d[1] === '0' ? wordFor5_14 :
-           d[1] === '1' ? wordFor1 : d[1] >= '2' && d[1] <= '4' ? wordFor2_4 : wordFor5_14;
-  }
-  else
-    return "All parameters must be fill";
+  const d = digit.toString().slice(-2);
+  return d[0] === '1' || d[1] >= '5' || d[1] === '0' ? wordFor5_14 :
+         d[1] === '1' ? wordFor1 : d[1] >= '2' && d[1] <= '4' ? wordFor2_4 : wordFor5_14;
+
 }
