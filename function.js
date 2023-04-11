@@ -7,9 +7,9 @@ window.function = function (digit, wordFor1, wordFor2_4, wordFor5_14) {
   // or it's `undefined`.  This is a good place to
   // extract the `.value`s and assign default
   // values.
-
+  
   digit = digit.value ?? null;
-  wordFor1 = worFor1.value ?? null; 
+  wordFor1 = wordFor1.value ?? null; 
   wordFor2_4 = wordFor2_4.value ?? null;
   wordFor5_14 = wordFor5_14.value ?? null;
   
