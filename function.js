@@ -13,8 +13,17 @@ window.function = function (in_digit, in_wordFor1, in_wordFor2_4, in_wordFor5_14
   const wordFor2_4 = String(in_wordFor2_4.value) ?? "";
   const wordFor5_14 = String(in_wordFor5_14.value) ?? "";
   
-  const d = digit.toString().slice(-2);
-  return (d[0] === '1' || d[1] >= '5' || d[1] === '0') ? wordFor5_14 :
-         (d[1] === '1' ? wordFor1 : (d[1] >= '2' && d[1] <= '4' ? wordFor2_4 : wordFor5_14));
+  const lastTwoDigits = digit.toString().slice(-2);
+  const lastDigit = parseInt(lastTwoDigits.slice(-1));
+
+  if (lastTwoDigits === '11' || lastTwoDigits === '12' || lastTwoDigits === '13' || lastTwoDigits === '14') {
+    return wordFor5_14;
+  } else if (lastDigit === 1) {
+    return wordFor1;
+  } else if (lastDigit >= 2 && lastDigit <= 4) {
+    return wordFor2_4;
+  } else {
+    return wordFor5_14;
+  }
 
 }
