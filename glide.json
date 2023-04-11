@@ -1,0 +1,33 @@
+[
+  {
+    "kind": "column",
+    "name": "Сase of a noun with a numeral",
+    "description": "Return right word form for a digit.",
+    "author": "Max Nikitin <mnikitin@itsalt.ru>",
+    "params": [
+      {
+        "name": "digit",
+        "displayName": "Digit",
+        "type": "number"
+      },
+      {
+        "name": "wordFor1",
+        "displayName": "Correct word for phrase 1 ...",
+        "type": "string"
+      },
+      {
+        "name": "wordFor2_4",
+        "displayName": "Correct word for phrase 2 ...",
+        "type": "string"
+      },
+      {
+        "name": "wordFor5_14",
+        "displayName": "Correct word for phrase 5 ...",
+        "type": "string"
+      }
+    ],
+    "result": {
+      "type": "string"
+    }
+  }
+]
