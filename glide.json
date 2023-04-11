@@ -1,24 +1,29 @@
 [
   {
     "kind": "column",
-    "name": "Substring",
-    "description": "Extracts a substring out of a string. Both start and end indexes are optional. The end index is exclusive.",
-    "author": "Mark Probst <mark@glideapps.com>",
+    "name": "Сase of a noun with a numeral",
+    "description": "Return right word form for a digit.",
+    "author": "Max Nikitin <mnikitin@itsalt.ru>",
     "params": [
       {
-        "name": "string",
-        "displayName": "String",
+        "name": "in_digit",
+        "displayName": "Digit",
         "type": "string"
       },
       {
-        "name": "start",
-        "displayName": "Start index",
-        "type": "number"
+        "name": "in_wordFor1",
+        "displayName": "Correct word for phrase 1 ...",
+        "type": "string"
       },
       {
-        "name": "end",
-        "displayName": "End index",
-        "type": "number"
+        "name": "in_wordFor2_4",
+        "displayName": "Correct word for phrase 2 ...",
+        "type": "string"
+      },
+      {
+        "name": "in_wordFor5_14",
+        "displayName": "Correct word for phrase 5 ...",
+        "type": "string"
       }
     ],
     "result": {
