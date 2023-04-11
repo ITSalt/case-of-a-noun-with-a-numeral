@@ -1,8 +1,8 @@
-## Glide Experimental Code Template
-# case-of-a-noun-with-a-numeral
+# Glide Experimental Code Template
+## case-of-a-noun-with-a-numeral
 Return right word form for a digit.
 
-``
+```
 // Test case 1
 const result1 = caseForDigits(1, 'яблоко', 'яблока', 'яблок');
 console.log(result1 === 'яблоко'); // expected output: true
@@ -26,4 +26,4 @@ console.log(result5 === 'яблок'); // expected output: true
 // Test case 6
 const result6 = caseForDigits(10, 'яблоко', 'яблока', 'яблок');
 console.log(result6 === 'яблок'); // expected output: true
-``
+```
