@@ -10,8 +10,8 @@ window.function = function (digit, wordFor1, wordFor2_4, wordFor5_14) {
 
   digit = digit.value ?? null;
   wordFor1 = worFor1.value ?? null; 
-  wordFor2_4 = wordFor2_4 ?? null;
-  wordFor5_14 = wordFor5_14 ?? null;
+  wordFor2_4 = wordFor2_4.value ?? null;
+  wordFor5_14 = wordFor5_14.value ?? null;
   
   if (digit && wordFor1 && wordFor2_4&&wordFor5_14) {
     const d = digit.toString().slice(-2);
