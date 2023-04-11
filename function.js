@@ -8,6 +8,8 @@ window.function = function (digit, wordFor1, wordFor2_4, wordFor5_14) {
   // extract the `.value`s and assign default
   // values.
   
+  return wordFor1.value;
+  
   digit = digit.value ?? null;
   wordFor1 = wordFor1.value ?? null; 
   wordFor2_4 = wordFor2_4.value ?? null;
